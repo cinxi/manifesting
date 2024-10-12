@@ -1,0 +1,68 @@
+/* History Section */
+.history-section h2 {
+    color: #2E7D32; /* Dark Green */
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    border-left: 3px solid #2E7D32;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -28px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-content {
+    padding-left: 40px;
+}
+
+.timeline-content h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+.timeline-date {
+    font-size: 0.85em;
+    color: #999;
+}
+.history-section h2 {
+    color: #2E7D32; /* Dark Green */
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.sidebar .nav-link {
+    color: #333333;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background-color: #d4edda; /* Light Green */
+    color: #155724; /* Dark Green */
+}

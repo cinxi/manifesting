@@ -1,0 +1,153 @@
+/* Custom Styles */
+
+/* Sidebar Styles */
+.sidebar .nav-link {
+    color: #333333;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background-color: #d4edda; /* Light Green */
+    color: #155724; /* Dark Green */
+}
+
+/* Calendar Styles */
+#calendar {
+    /* Adjust the table to fit the container */
+    width: 100%;
+}
+
+#calendar table {
+    table-layout: fixed;
+}
+
+#calendar th,
+#calendar td {
+    width: 14.28%;
+    height: 100px;
+    vertical-align: top;
+    position: relative;
+}
+
+#calendar th {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#calendar td {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#calendar td:hover {
+    background-color: #f1f1f1;
+}
+
+.day-number {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: bold;
+}
+
+.event {
+    background-color: #28a745; /* Green */
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+
+
+
+/* Reports Section Placeholder */
+.reports-container {
+    height: 300px; /* Adjust as needed */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777777;
+    font-size: 1.1em;
+}
+
+
+
+
+/* User Management Table Styles */
+.users-table th {
+    text-align: center;
+}
+
+.users-table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Modal Styles */
+.modal .form-control,
+.modal .form-select {
+    border-radius: 0.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    #calendar th,
+    #calendar td {
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .nav-menu ul {
+        display: flex;
+    }
+
+    .nav-item {
+        flex: 1;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .users-table th,
+    .users-table td {
+        font-size: 0.9rem;
+    }
+
+    #calendar th,
+    #calendar td {
+        height: 60px;
+    }
+}
